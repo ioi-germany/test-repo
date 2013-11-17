@@ -1,5 +1,5 @@
 {
 "sum": [
-  {"data set": "sum1", "commit": "ebf9d32d07d05a1ca399f191fa7ab78efc342b7a"},
-  {"data set": "sum2", "commit": "latest"}]
+  {"dataset": "sum1", "commit": "ebf9d32d07d05a1ca399f191fa7ab78efc342b7a"},
+  {"dataset": "sum2", "commit": "latest"}]
 }
