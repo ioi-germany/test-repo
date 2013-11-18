@@ -19,8 +19,6 @@ with day():
     contest_wnd(special, start = time("2012-09-01 10:00:00"), stop = time("2015-09-01 13:00:00"))
 
     task("sum")
-    task("sum-outputonly")
-    task("sumcommunication")
     task("wormup")
 
 unit_test_user(user("test", "test"))
