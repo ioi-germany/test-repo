@@ -25,15 +25,6 @@ with subtask("Public", True) as s:
     with group(1):
         add_testcase(tcs[0], save=True)
 
-with subtask("Detailed Feedback 1", True) as s:
-    s.constraint("M: [15,]")
-    with group(39):
-        testcaserange(1, 3)
-
-with subtask("Detailed Feedback 2", True) as s:
-    with group(60):
-        testcaserange(8, 12)
-
 with subtask("1") as s:
     s.constraint("M: [15,]")
     with group(40):
@@ -46,6 +37,15 @@ with subtask("2") as s:
 with subtask("3") as s:
     with group(30):
         testcaserange(11, 15)
+
+with subtask("Detailed Feedback 1", True) as s:
+    s.constraint("M: [15,]")
+    with group(39):
+        testcaserange(1, 3)
+
+with subtask("Detailed Feedback 2", True) as s:
+    with group(60):
+        testcaserange(8, 12)
 
 statement(compile("statement"))
 

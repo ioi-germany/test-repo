@@ -6,8 +6,6 @@ batch(comparator=compile("comparator.cpp", use_lib=True))
 timelimit(1)
 memorylimit(256)
 
-auto_feedback_groups()
-
 output_generator(compile("solution.cpp"))
 test_submission("solution.cpp")
 test_submission("solution-int.cpp", wrong_output = [3])
@@ -29,9 +27,9 @@ with subtask("Public", public=True) as s:
 # Subtask 1
 with subtask("Subtask 1") as s:
     with group(10):
-        testcase(gen, 1, 0, detailed = True)
+        testcase(gen, 1, 0, feedback=True)
     with group(40):
-        testcase(gen, 341, 2000, detailed = True)
+        testcase(gen, 341, 2000, feedback=True)
         testcase(gen, 42, 12)
 
 # detailed feedback subtask will be inserted here automatically
@@ -39,9 +37,10 @@ with subtask("Subtask 1") as s:
 # Subtask 2
 with subtask("Subtask 2") as s:
     with group(50):
-        testcase(gen, 43, 324232, detailed = True)
+        testcase(gen, 43, 324232, feedback=True)
         testcase(gen, 43, 1000000000000000000)
 
 # detailed feedback subtask will be inserted here automatically
+generate_feedback()
 
 statement(compile("statement"))
