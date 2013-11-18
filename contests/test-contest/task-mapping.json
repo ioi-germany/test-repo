@@ -1,6 +1,6 @@
 {
 "sum": [
-  {"dataset": "sum1", "commit": "ebf9d32d07d05a1ca399f191fa7ab78efc342b7a"},
+  {"dataset": "sum1", "commit": "c598495f673ccd87c9c405aa6e48514996822a05"},
   {"dataset": "sum2", "commit": "HEAD"}],
 "wormup": [
   {"dataset": "wormup1", "commit": "HEAD"}]

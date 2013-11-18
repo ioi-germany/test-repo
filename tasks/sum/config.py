@@ -39,6 +39,7 @@ with subtask("Subtask 2") as s:
     with group(50):
         testcase(gen, 43, 324232, feedback=True)
         testcase(gen, 43, 1000000000000000000)
+        testcase(gen, 43, 100000000000000000)
 
 # detailed feedback subtask will be inserted here automatically
 generate_feedback()
